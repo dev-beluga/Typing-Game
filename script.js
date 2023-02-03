@@ -125,7 +125,7 @@ function checkAnswer(key) {
   }
 }
 function preloadGame() {
-  lives = 3;
+  lives = 5;
   time = 100;
   score = 0;
   letters = ["", "", "", "", ""];
