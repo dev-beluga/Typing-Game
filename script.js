@@ -10,6 +10,7 @@ const letterDisplay = {
   posN1: document.getElementById("pos-1"),
   posN2: document.getElementById("pos-2"),
 };
+
 let letters = ["", "", "", "", ""];
 let scene = "home";
 let timeLeft = 0;
@@ -62,6 +63,7 @@ function tick() {
     document.getElementById("timeLeft").style.left = (100 - time) / 2 + "vw";
   }
 }
+
 function sceneDisplay() {
   homeScene.style.opacity = 0;
   transitionScene.style.opacity = 0;
@@ -82,6 +84,7 @@ function sceneDisplay() {
       break;
   }
 }
+
 function generateLetter() {
   const letters = "abcdefghijklmnopqrstuvwxyz";
   let currentLetter = letters.charAt(
@@ -89,6 +92,7 @@ function generateLetter() {
   );
   return currentLetter;
 }
+
 function renderLetters() {
   letterDisplay.pos2.innerText = letters[0].toUpperCase();
   letterDisplay.pos1.innerText = letters[1].toUpperCase();
@@ -96,6 +100,7 @@ function renderLetters() {
   letterDisplay.posN1.innerText = letters[3].toUpperCase();
   letterDisplay.posN2.innerText = letters[4].toUpperCase();
 }
+
 function nextLetter() {
   time = 100;
   letters.shift(1, 1);
@@ -103,6 +108,7 @@ function nextLetter() {
   pos0.style.color = "#ffffff";
   renderLetters();
 }
+
 function checkAnswer(key) {
   if (key.key == letters[2]) {
     score++;
@@ -124,6 +130,7 @@ function checkAnswer(key) {
     }
   }
 }
+
 function preloadGame() {
   lives = 5;
   time = 100;
@@ -137,6 +144,7 @@ function preloadGame() {
   pos0.style.color = "#ffffff";
   renderLetters();
 }
+
 function generateMessage() {
   let options = [
     "Good Try",
@@ -147,6 +155,7 @@ function generateMessage() {
   document.getElementById("motivation").innerText =
     options[Math.floor(Math.random() * options.length)];
 }
+
 document.addEventListener("keypress", function (key) {
   if (pressing == false) {
     if (scene == "home" || (scene == "gameOver" && cooldown > 30)) {
@@ -160,6 +169,7 @@ document.addEventListener("keypress", function (key) {
     pressing = true;
   }
 });
+
 document.addEventListener("keyup", function () {
   pressing = false;
 });
