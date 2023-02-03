@@ -1,0 +1,114 @@
+body {
+  background-color: #222222;
+  text-align: center;
+  /* font-family: "Bungee Inline"; */
+  color: #ffffff;
+  margin: 0;
+}
+#welcome {
+  font-family: "Creepster", cursive;
+}
+
+.start {
+  font-family: "Indie Flower", cursive;
+}
+
+#home {
+  position: absolute;
+  opacity: 0;
+
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.25s;
+}
+#home h1 {
+  font-size: 25vh;
+}
+#home h3 {
+  font-size: 5vh;
+}
+#transition {
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  height: 90%;
+  top: 10%;
+  transition-duration: 0.25s;
+}
+#countdown {
+  font-size: 20vh;
+}
+#game {
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.25s;
+}
+#timeLeft {
+  position: absolute;
+  top: 0;
+  background-color: #bbbbbb;
+  height: 1vh;
+  width: 100vw;
+  transition-duration: 0.2s;
+}
+#letterDisplay {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 5vh;
+}
+#letterDisplay h1 {
+  font-size: 30vh;
+  padding: 2vh;
+}
+#letterDisplay h2 {
+  font-size: 15vh;
+  padding: 3vh;
+  color: #bbbbbb;
+}
+#letterDisplay h3 {
+  font-size: 10vh;
+  padding: 3vh;
+  color: #888888;
+}
+#score {
+  position: absolute;
+  font-size: 4vh;
+  left: 10vh;
+  text-align: left;
+}
+#lives {
+  position: absolute;
+  font-size: 4vh;
+  right: 10vh;
+  text-align: right;
+}
+
+.display {
+  display: inline-block;
+}
+
+#gameOver {
+  position: absolute;
+  opacity: 0;
+  font-family: "Bungee Inline";
+
+  /* font-family: "Wallpoet", cursive; */
+  /* font-family: "Henny Penny", cursive; */
+
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.25s;
+}
+#gameOver h2 {
+  font-size: 10vh;
+}
+#gameOver h3 {
+  font-size: 4vh;
+}

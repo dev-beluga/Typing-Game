@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Typing Game</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Wallpoet&family=Henny+Penny&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="home">
+      <h1 id="welcome">WELCOME</h1>
+      <h3 class="start">Press Any Key To Start</h3>
+    </div>
+    <div id="transition">
+      <h1 id="countdown">3</h1>
+    </div>
+    <div id="game">
+      <div id="timeLeft"></div>
+      <div id="stats">
+        <h4 id="score">Score: <span id="currentScore">0</span></h4>
+        <h4 id="lives">Lives: <span id="livesLeft">5</span></h4>
+      </div>
+      <div id="letterDisplay">
+        <h3 class="display" id="pos2"></h3>
+        <h2 class="display" id="pos1"></h2>
+        <h1 class="display" id="pos0"></h1>
+        <h2 class="display" id="pos-1"></h2>
+        <h3 class="display" id="pos-2"></h3>
+      </div>
+    </div>
+    <div id="gameOver">
+      <h2>Game Over!</h2>
+      <h3 class="score">
+        Your score was <span id="endScore">0</span><br /><br /><span
+          id="motivation"
+        ></span>
+      </h3>
+      <h4 class="start">Press Any Key To Start Again</h4>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
